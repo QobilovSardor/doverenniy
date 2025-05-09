@@ -1,0 +1,43 @@
+@media(max-width: 768px) {
+    .app-icon {
+        padding-left: 0 !important;
+    }
+    .lp-grid {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 0 !important;
+    }
+    .lp-child-width-1-4 > * {
+        width: 100%;
+        justify-content: center;
+    }
+    .lp-grid > * {
+        padding-left: 0 !important;
+    }
+    .lp-parent a {
+        display: inline !important;
+    }
+    .lp-parent-box {
+        display: flex !important;
+        opacity: 0.5;
+        justify-content: space-between;
+    }
+    .lp-parent span::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url('../images/chevron-down.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .lp-parent span.active::before {
+        transform: rotate(180deg);
+    }
+    .lp-active .lp-parent-box span {
+        opacity: 1;
+    }
+    .price-grid {
+        gap: 20px;
+    }
+}

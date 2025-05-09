@@ -1,0 +1,61 @@
+.cookie-box {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.838);
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transform: translateX(-50%) translateY(220%);
+  transition: all 0.2s ease;
+  max-width: 80%;
+}
+.cookie-box a {
+  text-decoration: none;
+  color: rgb(139, 79, 139);
+}
+.cookie-box.active {
+  transform: translateX(-50%) translateY(0%);
+}
+.cookie-close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.cookie-close::before, .cookie-close::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+  left: 0;
+}
+.cookie-close::before {
+  transform: rotate(45deg);
+}
+.cookie-close::after {
+  transform: rotate(-45deg);
+}
+.cookie-close:hover {
+  opacity: 0.7;
+}
+.cookie-close:active {
+  transform: scale(0.892);
+}
+
+@media (max-width: 500px) {
+  .cookie-box {
+    width: 80%;
+  }
+}
