@@ -461,6 +461,11 @@ body {
   margin: 0;
   overflow: hidden;
   overflow: clip;
+  background: #232126 !important;
+}
+.lp-section-default,
+.lp-navbar-container {
+  background: #232126 !important;
 }
 a {
   color: #fff;
@@ -2454,20 +2459,13 @@ body {
 * {
   box-sizing: border-box;
 }
-.home-body,
-html {
-  background: #232126 !important;
-}
-.home-body .lp-section-default,
-.home-body .lp-navbar-container {
-  background: transparent;
-}
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
 }
 .intro {
-  margin-top: 50px;
+  margin-top: 10px;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -2591,7 +2589,7 @@ html {
 
 .intro .intro-desc {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -2706,7 +2704,7 @@ html {
 }
 
 .road {
-  margin: 50px 0 100px 0;
+  margin: 50px 0 0 0;
   position: relative;
   height: 100px; /* kerakli balandlik */
   overflow: hidden;
@@ -2805,7 +2803,7 @@ html {
   bottom: 50px;
   right: 65px;
   position: fixed;
-  z-index: 100000;
+  z-index: 900;
 }
 .fixed-chat__btn {
   cursor: pointer;
@@ -2944,7 +2942,9 @@ html {
     margin-bottom: 20px;
   }
   .choos-me .road {
-    display: none;
+    width: calc(100% + 40px);
+    height: 70px;
+    margin: 40px 0 0 -20px;
   }
 }
 @media (max-width: 768px) {
@@ -3010,6 +3010,6 @@ html {
     padding: 50px 20px 190px 20px;
   }
   .intro .intro-desc {
-    font-size: 12px;
+    font-size: 16px;
   }
 }

@@ -83,6 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var menuOpenButton = document.getElementById("menu-open");
+  console.log(menuOpenButton);
+
   var closeMenuButton = document.getElementById("close-menu");
   var offcanvas = document.querySelector(".lp-offcanvas");
 
@@ -98,21 +100,3 @@ document.addEventListener("DOMContentLoaded", function () {
     offcanvas.style.display = "none";
   });
 });
-
-const images = document.querySelectorAll('.intro-image');
-if (images) {
-  let current = 0;
-
-  function showNextImage() {
-    images.forEach(img => img.classList.remove('show'));
-    images[current].classList.add('show');
-    current = (current + 1) % images.length;
-  }
-
-  // Boshlang‘ich rasmni ko‘rsatish
-  showNextImage();
-
-  // Har 1 sekundda almashtir
-  setInterval(showNextImage, 1000);
-}
-
