@@ -151,6 +151,204 @@
   opacity: 1;
   z-index: 1;
 }
+
+.arrow-down__btn {
+  margin: 20px auto 50px auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  display: block;
+  animation: scaleAnimation 3.2s infinite linear;
+}
+
+.arrow-down__btn img {
+  height: 20px;
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1, 1);
+    animation-timing-function: 0;
+  }
+
+  50% {
+    transform: scale(0.7, 0.7);
+    animation-timing-function: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.choos-me {
+}
+
+.choos-me__title {
+  color: #e3c37a;
+  font-size: 60px;
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about-cards {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.about-cards .img-box {
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.about-cards .about-card {
+  border-width: 0px;
+  border-radius: 10px 10px 10px 10px;
+  background-image: linear-gradient(
+    0.5turn,
+    rgba(35, 33, 38, 1) 0%,
+    rgba(20, 19, 21, 1) 100%
+  );
+  border-color: transparent;
+  border-style: dotted;
+  padding: 4px;
+  min-width: 370px;
+}
+.about-cards .about-card__content {
+  border: 1px dotted #8a7952;
+  border-radius: inherit;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+}
+.about-card__info {
+  color: #656465;
+  font-size: 15px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.about-card__info strong {
+  color: #fff;
+}
+.about-card .card-icon {
+  width: 100%;
+}
+
+.road {
+  margin: 50px 0 100px 0;
+  position: relative;
+  height: 100px; /* kerakli balandlik */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.road-line path {
+  stroke: #e3c37a;
+  stroke-width: 1;
+  stroke-dasharray: 10 10; /* chiziq uzunligi va bo‘shliq */
+  /* animation: dashmove 2s linear infinite; */
+}
+.road-lines {
+  animation: sbs-833776089-1733050289937 35s infinite linear;
+  backface-visibility: hidden;
+  width: 100%;
+}
+@keyframes sbs-833776089-1733050289937 {
+  0% {
+    transform: translateX(0px) scale(1, 1);
+    animation-timing-function: 0;
+  }
+  100% {
+    transform: translateX(-2540px) scale(0.98, 0.98);
+  }
+}
+
+/* @keyframes dashmove {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -20;
+  }
+} */
+.road .road-img {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.road .road-line {
+  width: 100%;
+}
+
+.about-cards__track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.road {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.road-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 200%;
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #e3c37a 0 10px,
+    transparent 10px 20px
+  );
+  transform: translateY(-50%);
+  animation: scrollLine 0.4s linear infinite;
+}
+
+.road-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+@keyframes scrollLine {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -20px 0;
+  }
+}
+
 @media (max-width: 1850px) {
   .container {
     max-width: calc(100% - 40px);
@@ -204,12 +402,33 @@
   .intro .intro-sub__title {
     font-size: 25px;
   }
+  .about-cards__track {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: none;
+    gap: 20px;
+  }
+  .about-cards .about-card {
+    min-width: 100%;
+    width: 100%;
+  }
+  .choos-me {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  .choos-me .road {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .intro .intro-content {
     padding: 50px 20px 290px 20px;
     width: 100%;
     text-align: center;
+  }
+  .choos-me__title {
+    font-size: 30px;
   }
   .intro {
     flex-direction: column;
@@ -224,6 +443,12 @@
     /* left: 50%;
     transform: translateX(-50%); */
     height: 350px;
+  }
+}
+@media (max-width: 650px) {
+  .about-cards__track {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 550px) {
