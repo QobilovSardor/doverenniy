@@ -511,21 +511,6 @@
 
       </div>
     </div>
-    <!-- <div class="road">
-      <div class="road-lines">
-        <svg class="road-line" xmlns="http://www.w3.org/2000/svg" viewBox="5177 5136 2524 2">
-          <path fill="transparent" stroke="#e3c37a" fill-opacity="1" stroke-width="1" stroke-opacity="1"
-            fill-rule="evenodd" display="undefined" stroke-linecap="undefined" stroke-linejoin="undefined"
-            stroke-dasharray="4 4" paint-order="undefined" id="tSvgd81c707209" title="Path 2"
-            d="M 5178.0002025702815 5137.0001 C 5178.0002025702815 5137.0001 7700.000101285141 5137.0001 7700.000101285141 5137.0001"
-            style=""></path>
-          <defs></defs>
-        </svg>
-      </div>
-      <img class="road-img" data-original="https://static.tildacdn.com/tild6261-6136-4133-b163-653731366461/_.png"
-        alt="" imgfield="tn_img_1733050609198"
-        src="https://optim.tildacdn.com/tild6261-6136-4133-b163-653731366461/-/resize/176x/-/format/webp/_.png.webp">
-    </div> -->
     <div class="road">
       <div class="road-line"></div>
       <img class="road-img"
@@ -573,31 +558,7 @@
     </div>
   </div>
 
-  <script>
-    const images = document.querySelectorAll('.intro-image');
-    let current = 0;
 
-    function showNextImage() {
-      images.forEach(img => img.classList.remove('show'));
-      images[current].classList.add('show');
-      current = (current + 1) % images.length;
-    }
-
-    // Boshlang‘ich rasmni ko‘rsatish
-    showNextImage();
-
-    // Har 1 sekundda almashtir
-    setInterval(showNextImage, 2000);
-    document.addEventListener("DOMContentLoaded", function () {
-      const chatBtn = document.querySelector(".fixed-chat__btn");
-      const socialMedia = document.querySelector(".social-media");
-
-      chatBtn.addEventListener("click", function () {
-        chatBtn.classList.toggle("active");
-        socialMedia.classList.toggle("show");
-      });
-    });
-  </script>
 
 </body>
 
