@@ -146,7 +146,7 @@ html {
   opacity: 0;
   margin-left: auto;
   display: block;
-  transition: opacity 0.5s ease;
+  transition: opacity 3s ease;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -293,6 +293,7 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
+  width: 147px;
 }
 .road .road-line {
   width: 100%;
@@ -329,8 +330,8 @@ html {
   height: 2px;
   background-image: repeating-linear-gradient(
     to right,
-    #e3c37a 0 10px,
-    transparent 10px 20px
+    #e3c37a 10px 14px,
+    transparent 11px 21px
   );
   transform: translateY(-50%);
   animation: scrollLine 0.4s linear infinite;
@@ -472,6 +473,9 @@ html {
     grid-template-columns: 1fr 1fr;
     animation: none;
     gap: 20px;
+  }
+  .about-card-media-none {
+    display: none;
   }
   .about-cards .about-card {
     min-width: 100%;
