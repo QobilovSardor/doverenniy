@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+.home-body,
+html {
+  background: #232126 !important;
+}
 .container {
   max-width: 1800px;
   margin: 0 auto;
