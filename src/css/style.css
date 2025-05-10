@@ -2614,7 +2614,7 @@ body {
   width: 488px;
   margin-top: 30px;
 }
-.intro .intro-image {
+/* .intro .intro-image {
   height: 646px;
   opacity: 0;
   margin-left: auto;
@@ -2627,7 +2627,7 @@ body {
 .intro .intro-image.show {
   opacity: 1;
   z-index: 1;
-}
+} */
 
 .arrow-down__btn {
   margin: 20px auto 50px auto;
