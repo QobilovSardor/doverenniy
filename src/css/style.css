@@ -3039,7 +3039,7 @@ body {
 }
 @media (max-width: 550px) {
   /*  */
-  .lp-navbar-container {
+  .home-body .lp-navbar-container {
     background: transparent !important;
     position: absolute;
     z-index: 10;
@@ -3094,11 +3094,4 @@ body {
     margin-top: -10px;
     margin-bottom: -10px;
   }
-  /* .about-cards .about-card {
-    width: 290px;
-    margin: 0 auto;
-  }
-  .about-cards__track {
-    margin: 0 auto;
-  } */
 }
