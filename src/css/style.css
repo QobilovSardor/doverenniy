@@ -2983,7 +2983,7 @@ body {
 }
 @media (max-width: 768px) {
   .intro .intro-content {
-    padding: 50px 20px 290px 20px;
+    padding: 50px 20px 30px 20px;
     width: 100%;
     text-align: center;
   }
