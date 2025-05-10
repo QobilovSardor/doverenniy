@@ -2493,7 +2493,7 @@ body {
   align-items: end;
   justify-content: space-between;
 }
-.intro::before {
+/* .intro::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -2507,7 +2507,7 @@ body {
   background-position: center center;
   border-color: transparent;
   border-style: solid;
-}
+} */
 .intro .intro-content {
   padding: 100px 0 100px 50px;
   max-width: 1025px;
@@ -3072,7 +3072,7 @@ body {
     animation: none;
   }
   .choos-me .road {
-    margin-top: -20px;
-    margin-bottom: -20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
   }
 }
