@@ -59,3 +59,16 @@
     width: 80%;
   }
 }
+@media (max-width: 550px) {
+  .lp-nav-default > li > a,
+  .lp-parent-box {
+    font-size: 18px;
+    align-items: center;
+  }
+  .lp-nav-default .lp-nav-sub a {
+    font-size: 14px;
+  }
+  .lp-nav-default > li.lp-active > a {
+    font-size: 17px;
+  }
+}

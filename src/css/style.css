@@ -1072,7 +1072,7 @@ blockquote footer::before {
   box-sizing: border-box;
   width: 270px;
   padding: 20px 20px;
-  background: #171717;
+  background: #111111 !important;
   overflow-y: auto;
   box-shadow: 0 40px 80px -20px rgb(0, 0, 0, 0.3);
 }
@@ -1204,6 +1204,12 @@ ul.lp-nav-sub {
   font-size: 12px;
   font-family: 'Work Sans';
   text-decoration: none;
+}
+.lp-navbar-toggle svg {
+  width: 50px;
+}
+.lp-navbar-toggle svg path {
+  stroke: #e3c37a;
 }
 .lp-navbar-nav > li > a {
   padding: 0 15px;
@@ -2984,6 +2990,11 @@ body {
   }
   .choos-me__title {
     font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-cards {
+    margin-top: 20px;
   }
   .intro {
     flex-direction: column;
@@ -3027,11 +3038,19 @@ body {
   }
 }
 @media (max-width: 550px) {
+  /*  */
+  .lp-navbar-container {
+    background: transparent !important;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+  }
   .intro {
     border-radius: 0;
     width: calc(100% + 40px);
     margin-left: -20px;
     margin-top: 0;
+    height: 100vh;
   }
   .intro .intro-breadcrumb {
     font-size: 14px;
@@ -3052,7 +3071,7 @@ body {
     height: auto;
   }
   .intro .intro-content {
-    padding: 50px 20px 30px 20px;
+    padding: 150px 20px 30px 20px;
   }
   .intro .intro-desc {
     font-size: 16px;
@@ -3075,4 +3094,11 @@ body {
     margin-top: -10px;
     margin-bottom: -10px;
   }
+  /* .about-cards .about-card {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .about-cards__track {
+    margin: 0 auto;
+  } */
 }
