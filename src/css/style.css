@@ -2916,7 +2916,7 @@ body {
     font-size: 32px;
   }
   .intro .intro-content {
-    padding: 70px 0 70px 40px;
+    padding: 70px 0 30px 40px;
   }
 }
 @media (max-width: 1024px) {
@@ -3041,7 +3041,7 @@ body {
     height: auto;
   }
   .intro .intro-content {
-    padding: 50px 20px 190px 20px;
+    padding: 50px 20px 30px 20px;
   }
   .intro .intro-desc {
     font-size: 16px;
