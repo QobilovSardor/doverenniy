@@ -425,9 +425,6 @@
   src: url(/src/fonts/worksans-e2815db0.woff2) format('woff2');
   font-display: swap;
 }
-html {
-  background: #171717;
-}
 .lp-button:not(:disabled),
 a {
   cursor: pointer;
@@ -461,6 +458,12 @@ body {
   margin: 0;
   overflow: hidden;
   overflow: clip;
+  background: #232126 !important;
+}
+.vacancy-section-default.vacancy-section,
+.lp-section-default.lp-section.lp-section-large,
+.lp-section-default.lp-section.lp-section-large,
+.lp-navbar-container:not(.lp-navbar-transparent) {
   background: #232126 !important;
 }
 a {
@@ -1403,7 +1406,6 @@ html {
   font-size: 15px;
   font-weight: 300;
   line-height: 1.6;
-  background: #171717;
   color: rgb(255, 255, 255, 0.7);
   text-rendering: optimizeLegibility;
 }
@@ -2199,6 +2201,7 @@ ul.lp-nav-sub {
 }
 html {
   overflow-y: scroll;
+  background: #232126 !important;
 }
 body {
   overflow: hidden;
@@ -2470,7 +2473,7 @@ ul {
   box-shadow: none;
 }
 .vacancy-section-default {
-  background: #171717;
+  background: #232126;
 }
 .vacancy-button-large {
   padding: 0 40px;

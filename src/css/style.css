@@ -2908,16 +2908,16 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .tarif {
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .tarif-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 40px;
+  gap: 50px;
   max-width: 1243px;
   margin: 0 auto;
   position: relative;
@@ -3003,7 +3003,7 @@ body {
   font-weight: 400;
 }
 .tarif-card__body {
-  padding: 10px 20px;
+  padding: 20px;
   height: 81%;
 }
 .tarif-card__content {
@@ -3084,7 +3084,10 @@ body {
 
 /* TRUSTED DRIVER */
 .trusted-driver {
-  margin: 60px 0 20px 0;
+  margin: 60px 0 70px 0;
+}
+.trusted-driver .title-text {
+  margin-bottom: 70px;
 }
 .trusted-driver .container {
   width: 1640px;
@@ -3094,6 +3097,7 @@ body {
   align-items: start;
   justify-content: space-between;
   position: relative;
+  gap: 20px;
 }
 .trusted-driver__boxes .line {
   width: 100%;
@@ -3291,17 +3295,18 @@ body {
     font-size: 15px;
   }
   .tarif-cards {
-    gap: 10px;
-  }
-  .tarif-cards {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .trusted-driver .title-text {
+    margin-bottom: 26px;
   }
   .title-text {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .tarif {
-    margin: 35px 0;
+    margin: 80px 0;
   }
   .tarif-cards::after {
     left: unset;
@@ -3312,7 +3317,7 @@ body {
   .trusted-driver__boxes {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     position: relative;
     width: fit-content;
     margin: 0 auto;

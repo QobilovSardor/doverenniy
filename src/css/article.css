@@ -1344,6 +1344,11 @@ ul.lp-nav-sub {
 .tm-page > :nth-child(3) {
   --tm-reveal: -10;
 }
+.tm-page > :nth-child(3),
+.lp-navbar-container:not(.lp-navbar-transparent),
+.lp-section-default {
+  background: #232126 !important;
+}
 .tm-page > :nth-child(4) {
   --tm-reveal: -20;
 }
