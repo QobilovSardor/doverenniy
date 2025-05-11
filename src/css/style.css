@@ -3443,3 +3443,26 @@ body {
     margin-bottom: -10px;
   }
 }
+@media (max-width: 550px) {
+  .lp-nav-default > li > a,
+  .lp-parent-box {
+    font-size: 18px;
+    align-items: center;
+  }
+  .lp-nav-default .lp-nav-sub a {
+    font-size: 14px;
+  }
+  .lp-nav-default > li.lp-active > a,
+  .lp-nav-default > li > a,
+  .lp-margin-remove-vertical {
+    font-size: 18px;
+  }
+  a.lp-link-text {
+    font-size: 14px;
+  }.lp-offcanvas-bar {
+    background: #000;
+  }
+  .lp-nav-default .close-menu a {
+    font-size: 17px;
+  }
+}

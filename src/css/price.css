@@ -465,7 +465,6 @@ body {
 .lp-section-default,
 .price-section-muted,
 .lp-navbar-container:not(.lp-navbar-transparent),
-.lp-offcanvas-bar,
 .lp-section-default {
   background: #232126 !important;
 }
