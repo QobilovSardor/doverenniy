@@ -427,6 +427,7 @@
 }
 html {
   background: #171717;
+  scroll-behavior: smooth;
 }
 .lp-button:not(:disabled),
 a {
