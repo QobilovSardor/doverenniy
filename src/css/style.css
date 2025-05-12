@@ -1040,9 +1040,6 @@ blockquote footer::before {
   padding-top: 70px;
   padding-bottom: 70px;
 }
-.lp-section-muted {
-  background: #1b1b1b;
-}
 .lp-container {
   display: flow-root;
   box-sizing: content-box;
@@ -2719,7 +2716,7 @@ body {
   margin-bottom: 0;
 }
 .about-card__info strong {
-  color: #fff;
+  color: #e3c37a;
 }
 .about-card .card-icon {
   width: 100%;
@@ -3459,7 +3456,8 @@ body {
   }
   a.lp-link-text {
     font-size: 14px;
-  }.lp-offcanvas-bar {
+  }
+  .lp-offcanvas-bar {
     background: #000;
   }
   .lp-nav-default .close-menu a {
